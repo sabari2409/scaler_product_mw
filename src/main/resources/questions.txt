@@ -1,0 +1,10 @@
+June 22nd class:
+
+1. Controller should not have entity to DTO mapping. Only service layer should hold ?
+
+
+
+//H/W 22 June 22
+//1. Look for a method in Rest Template which we can use to call FakeStore Endpoint
+//2. Complete ProductDto from Product Mapper
+//3. Try adding Delete, Put API in product controller
