@@ -3,6 +3,7 @@ package com.scaler.product.dto.mapper;
 import com.scaler.product.dto.CategoryDTO;
 import com.scaler.product.dto.ProductDTO;
 import com.scaler.product.model.Product;
+import com.scaler.product.model.Ratings;
 
 import java.util.List;
 import java.util.UUID;
@@ -17,13 +18,21 @@ public class ProductMapper implements IMapper<Product, ProductDTO> {
         productDTO.setDescription(entity.getDescription());
         productDTO.setImage(entity.getImage());
         productDTO.setCategory(entity.getCategory());
-        productDTO.setRating(entity.getRating());
         return productDTO;
     }
 
     @Override
     public Product toEntity(ProductDTO dto) {
-        return null;
+        Product product = new Product();
+        Ratings ratings = new Ratings();
+        product.setId(dto.getId());
+        product.setCategory(dto.getCategory());
+        product.setPrice(dto.getPrice());
+        product.setImage(dto.getImage());
+        ratings.setCount(dto.getRating().getCount());
+        ratings.setRate(dto.getRating().getRate());
+        product.setRating(ratings);
+        return product;
     }
 
     @Override

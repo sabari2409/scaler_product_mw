@@ -1,5 +1,6 @@
 package com.scaler.product.dto;
 
+import com.scaler.product.dto.mapper.RatingsDTO;
 import com.scaler.product.model.Ratings;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,5 +16,5 @@ public class ProductDTO {
     private Double Price;
     private String category;
     private String image;
-    private Ratings rating;
+    private RatingsDTO rating;
 }

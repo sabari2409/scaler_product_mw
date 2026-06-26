@@ -12,4 +12,6 @@ public interface IProductService {
     List<ProductDTO> getAllProducts();
 
     Product create(Product product);
+
+    ProductDTO updateProduct(int id, ProductDTO product);
 }
