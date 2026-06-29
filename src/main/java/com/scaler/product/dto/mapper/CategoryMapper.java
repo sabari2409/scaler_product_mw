@@ -11,9 +11,10 @@ public class CategoryMapper implements IMapper<Category, CategoryDTO> {
     @Override
     public CategoryDTO toDTO(Category entity) {
         CategoryDTO categoryDTO = new CategoryDTO();
-        categoryDTO.setUuid(UUID.randomUUID());
         categoryDTO.setName(entity.getName());
         categoryDTO.setDescription(entity.getDescription());
+        categoryDTO.setId(entity.getId());
+        categoryDTO.setIsActive(entity.getIsActive());
         return categoryDTO;
     }
 

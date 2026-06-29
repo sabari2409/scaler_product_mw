@@ -9,7 +9,8 @@ import java.util.UUID;
 @Setter
 public class CategoryDTO {
 
-    private UUID uuid;
-    private String description;
+    private int id;
     private String name;
+    private String description;
+    private Boolean isActive;
 }

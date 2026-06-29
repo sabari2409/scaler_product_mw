@@ -24,14 +24,10 @@ public class ProductMapper implements IMapper<Product, ProductDTO> {
     @Override
     public Product toEntity(ProductDTO dto) {
         Product product = new Product();
-        Ratings ratings = new Ratings();
         product.setId(dto.getId());
         product.setCategory(dto.getCategory());
         product.setPrice(dto.getPrice());
         product.setImage(dto.getImage());
-        ratings.setCount(dto.getRating().getCount());
-        ratings.setRate(dto.getRating().getRate());
-        product.setRating(ratings);
         return product;
     }
 
