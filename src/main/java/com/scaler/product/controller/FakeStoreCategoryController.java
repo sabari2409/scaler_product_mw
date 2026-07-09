@@ -10,14 +10,14 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("products")
+@RequestMapping("category")
 public class FakeStoreCategoryController {
 
     @Autowired
     private IFakeStoreCategoryService fakeStoreCategoryService;
 
 
-    @GetMapping("categories")
+    @GetMapping("all")
     public List<FakeStoreCategory> getAllCategories() {
         return this.fakeStoreCategoryService.getCategories();
     }
