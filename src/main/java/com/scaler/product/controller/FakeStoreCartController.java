@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/cart")
-public class CartController {
+public class FakeStoreCartController {
 
     @GetMapping("/{cartId}")
     public Cart getCartById(@PathVariable Long cartId) {
