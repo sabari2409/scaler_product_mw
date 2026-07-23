@@ -1,6 +1,7 @@
 package com.scaler.product.controller;
 
-import com.scaler.product.services.IFakeStoreProductService;
+import com.scaler.product.controller.fakestore_controller.FakeStoreProductController;
+import com.scaler.product.services.fakestore_services_impl.IFakeStoreProductService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;

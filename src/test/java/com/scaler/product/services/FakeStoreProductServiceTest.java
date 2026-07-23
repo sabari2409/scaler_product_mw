@@ -1,7 +1,7 @@
 package com.scaler.product.services;
 
 
-import com.scaler.product.services.Impl.FakeStoreProductService;
+import com.scaler.product.services.fakestore_services_impl.FakeStoreProductService;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

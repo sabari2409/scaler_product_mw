@@ -2,8 +2,9 @@ package com.scaler.product.controller;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.scaler.product.model.Cart;
-import com.scaler.product.model.User;
+import com.scaler.product.controller.fakestore_controller.FakeStoreCartController;
+import com.scaler.product.model.fakestore_model.Cart;
+import com.scaler.product.model.fakestore_model.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;

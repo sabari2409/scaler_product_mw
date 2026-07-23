@@ -1,14 +1,14 @@
 package com.scaler.product.services;
 
 
-import com.scaler.product.dto.FakeStoreUserAddressDto;
-import com.scaler.product.dto.FakeStoreUserCreatedResponseDto;
-import com.scaler.product.dto.FakeStoreUserDto;
-import com.scaler.product.dto.FakeStoreUserNameDto;
-import com.scaler.product.model.Address;
-import com.scaler.product.model.FakeStoreUser;
-import com.scaler.product.model.Name;
-import com.scaler.product.services.Impl.FakeStoreUserService;
+import com.scaler.product.dto.falestore_dto.FakeStoreUserAddressDto;
+import com.scaler.product.dto.falestore_dto.FakeStoreUserCreatedResponseDto;
+import com.scaler.product.dto.falestore_dto.FakeStoreUserDto;
+import com.scaler.product.dto.falestore_dto.FakeStoreUserNameDto;
+import com.scaler.product.model.fakestore_model.Address;
+import com.scaler.product.model.fakestore_model.FakeStoreUser;
+import com.scaler.product.model.fakestore_model.Name;
+import com.scaler.product.services.fakestore_services_impl.FakeStoreUserService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,8 +1,9 @@
 package com.scaler.product.controller;
 
 
-import com.scaler.product.dto.FakeStoreLoginRequestDto;
-import com.scaler.product.services.IFakeStoreAuthService;
+import com.scaler.product.controller.fakestore_controller.FakeStoreAuthController;
+import com.scaler.product.dto.falestore_dto.FakeStoreLoginRequestDto;
+import com.scaler.product.services.fakestore_services_impl.IFakeStoreAuthService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;

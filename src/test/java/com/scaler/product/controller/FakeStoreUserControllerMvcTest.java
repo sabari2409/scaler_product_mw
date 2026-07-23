@@ -1,11 +1,12 @@
 package com.scaler.product.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.scaler.product.dto.UserRequestDto;
-import com.scaler.product.model.Address;
-import com.scaler.product.model.FakeStoreUser;
-import com.scaler.product.model.Name;
-import com.scaler.product.services.IFakeStoreUserService;
+import com.scaler.product.controller.fakestore_controller.FakeStoreUserController;
+import com.scaler.product.dto.falestore_dto.UserRequestDto;
+import com.scaler.product.model.fakestore_model.Address;
+import com.scaler.product.model.fakestore_model.FakeStoreUser;
+import com.scaler.product.model.fakestore_model.Name;
+import com.scaler.product.services.fakestore_services_impl.IFakeStoreUserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
